@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: content-box;
+}
+
+h2, h3, p{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica Neue", "Roboto", sans-serif;
+}
+
+/* 
+    Vamos a dar un tamaño fijo de 960px a la página para que
+    sea más senzillo calcular tamaños.
+*/
+#header {
+    color: white;
+    background: #9febad;
+    padding: 5px;
+}
+
+#header h1 {
+    text-align: center;
+}
+
+
+.post{
+    padding: 5px;
+    float: left;
+    width: 20%;
+}
+
+.post img{
+    width: 100%;
+}
