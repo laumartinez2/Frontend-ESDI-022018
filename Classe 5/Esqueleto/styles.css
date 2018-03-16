@@ -3,18 +3,12 @@ html, body {
     padding: 0;
 }
 
-div {
-    box-sizing: content-box;
-}
-
 /* 
     Vamos a dar un tamaño fijo de 960px a la página para que
     sea más senzillo calcular tamaños.
 */
 #page-wrapper {
-    width: 960px;
-    margin: auto;
-   /*border: 1px solid grey;*/
+    border: 1px solid grey;
 }
 #header {
     color: white;
@@ -45,52 +39,37 @@ div {
     vertical-align: top;
 }
 #main-content {
-    float: left;
-    width: 60%;
-    margin-top: 15px;
+
 }
 
 #sidebar {
-    float: right;
-    width: 40%;
-}
 
-#sidebar h2, #sidebar h3{
-    padding-left: 10px;
 }
 
 /*
     Damos estilos al contenido principal
 */
 #main-article {
-    padding: 0px 10px 10px 10px;
-    background: #f8f8f8;
+    padding: 5px;
+    background: #e6e6e6;
     margin: 5px;
     border-radius: 10px;
     border: 1px solid #ccc;
- }
+}
 
 /*
     Definimos la cuadrícula de artículos
     usando flexible boxes.
 */
 #articles {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.post {
-    padding: 5px;
-    width: calc(50% - 10px);
-    float: left;
 }
 
 /*
     Hay que recolocar la lista en horizontal. 
 */
 #navigation-links li {
-    text-align: center;
-    display: inline-block;
+
 }
 
 #navigation-links a {
@@ -108,24 +87,19 @@ div {
     Definimos la cuadricula de ads utilizando flexbox.
 */
 #ads-container {
-  display: flex;
-  flex-wrap: wrap;
+
 }
 
 .ad-item {
     border: 1px solid #ccc;
     background: #e6e6e6;
-    margin: 10px;
+    margin-bottom: 10px;
     width: 128px;
     height: 128px;
-    background-image: url("img/img-1.png");
-    background-size: 130px;
+    box-sizing: border-box;
 }
 
 #footer {
     background: #ccc;
     padding: 15px;
-    width: 100%; clear: both;
-    bottom:0;
-    
 }

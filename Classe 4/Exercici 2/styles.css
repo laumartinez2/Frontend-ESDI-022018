@@ -1,16 +1,17 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
 }
 
 div {
     box-sizing: content-box;
 }
 
-h2, h3, p{
+h1, h2, h3, p, a{
     margin: 0px;
-    padding: 0px;
-    font-family: "Helvetica Neue", "Roboto", sans-serif;
+    padding: 3px 0px 0px 0px;
+    font-family: "Helvetica Neue", "Arial", "Roboto", sans-serif;
 }
 
 /* 
@@ -18,22 +19,55 @@ h2, h3, p{
     sea más senzillo calcular tamaños.
 */
 #header {
-    color: white;
-    background: #9febad;
-    padding: 5px;
+    color: black;
+    background: #393939;
+    padding: 10px 10px 10px 20px;
 }
 
 #header h1 {
+    text-align: left;
+    font-size: 20px;
+}
+
+#navigation-links{
     text-align: center;
 }
 
+#navigation-links li{
+    display: inline;
+}
+
+#navigation-links a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.blog-posts{
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.active{
+    border-bottom: 1px solid white;
+}
 
 .post{
-    padding: 5px;
+    margin: 10px 5px 5px 5px;
+    padding-bottom: 25px;
     float: left;
-    width: 20%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2);
+
+}
+
+.post h3, .post p{
+    padding-left: 10px;
 }
 
 .post img{
-    width: 100%;
+    width: 200px;
+}
+
+.post p {
+    font-size: 12px;
 }
