@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <title>Carousel Example</title>
 
+    <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+  <meta name="viewport" content="width=device-width">
+  <!-- End SlidesJS Required -->
+    
+    <!-- CSS for slidesjs.com example -->
+  <link rel="stylesheet" href="css/example.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- End CSS for slidesjs.com example -->
     
     <!-- SlidesJS Optional: If you'd like to use this design -->
   <style>
@@ -125,6 +133,9 @@
     
     
 </head>
+    
+    
+    
 <body>
 
 <div class="container">
@@ -133,6 +144,8 @@
         <img src="img/04.jpg" alt="foto">
         <img src="img/05.jpg" alt="foto">
         <img src="img/09.jpg" alt="foto">
+        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
     </div>
 </div>
 
@@ -155,7 +168,7 @@
       $('#slides').slidesjs({
         width: 940,
         height: 528,
-        navigation: false
+        
       });
     });
   </script>
